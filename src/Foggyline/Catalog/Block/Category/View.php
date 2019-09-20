@@ -6,6 +6,7 @@ namespace Foggyline\Catalog\Block\Category;
 
 use Foggyline\Catalog\Model\Category;
 
+class View
 {
   protected $category;
 
@@ -21,9 +22,9 @@ use Foggyline\Catalog\Model\Category;
     foreach ($this->category->getProducts() as $product) {
       if ($product instanceof \Foggyline\Catalog\Model\Product) {
         $products .= '<div class="product">
-         <h1 class="product-title">' . $product->getTitle() . '</h1>'
+         <h1 class="product-title">' . $product->getTitle() . '</h1>
          <div class="product-price">' . number_format($product->getPrice(), 2, ',', '.')
-         </div>';
+         . '</div>';
       }
     }
     return '<div class="category">
@@ -32,4 +33,3 @@ use Foggyline\Catalog\Model\Category;
       </div>';
   }
 }
- ?>

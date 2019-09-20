@@ -1,6 +1,5 @@
 <?php
-
-require __DIR__ . '/autoload.php';
+$loader = require __DIR__ . '/autoload.php';
 
 use Foggyline\Catalog\Model\Product;
 use Foggyline\Catalog\Model\Category;

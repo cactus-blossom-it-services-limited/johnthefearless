@@ -30,11 +30,7 @@ class Product
     return $this->price;
   }
 
-  public function getTaxRate(): {
+  public function getTaxRate(): int {
     return $this->taxRate;
   }
-
-
-
 }
- ?>
